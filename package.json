@@ -1,0 +1,31 @@
+{
+  "name": "modelo-assistencia-celular",
+  "version": "1.0.0",
+  "description": "Modelo de site para assistências técnicas e lojas de celular — catálogo, orçamento de reparo e painel administrativo",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:migrate": "node scripts/migrate.js --seed-defaults",
+    "db:import": "node scripts/import-json.js",
+    "seed": "node src/lib/seed.js",
+    "test": "node --test",
+    "preview": "node scripts/preview.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "pg-mem": "^3.0.14",
+    "supertest": "^7.2.2"
+  }
+}
