@@ -11,7 +11,8 @@
     "db:import": "node scripts/import-json.js",
     "seed": "node src/lib/seed.js",
     "test": "node --test",
-    "preview": "node scripts/preview.js"
+    "preview": "node scripts/preview.js",
+    "build:estatico": "node scripts/estatico.js"
   },
   "license": "ISC",
   "dependencies": {

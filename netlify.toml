@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build:estatico"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Vitrine estática: o painel e a API só existem na versão com servidor.
+[[redirects]]
+  from = "/admin"
+  to = "/"
+  status = 302
